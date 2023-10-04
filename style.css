@@ -14,10 +14,11 @@ body{
     /* min-width: 250px; */
     width: 300px;
     position: fixed;
+    overflow-x: hidden;
 }
 
 #navbar header{
-    margin: 0;
+    margin: -12px;
     font-size: 1.8rem;
     text-align: center;
 
@@ -71,9 +72,10 @@ body{
     line-height: 2rem;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 770px) {
     /* For mobile phones: */
-    [class*="col-3"] {
-      width: 100%;
-    }
+  .mainContainer{
+    display: flex;
+    flex-direction: column;
+  }
   }
